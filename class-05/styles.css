@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Slackside+One&display=swap');
+
+body {
+    background-color: #686868;
+}
+
+h1 {
+    padding: 20px;
+}
+
+header {
+    border: 1px solid red;
+    background-color: #ffe600;
+    margin: 20px;
+    border-radius: 25px;
+}
+
+header:hover {
+    background-color: aquamarine;
+}
+ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+ul > li {
+    display: inline;
+}
+
+ul > li > a{
+    color: darkgreen;
+    font-size: 20px;
+    text-decoration: none;    
+}
+
+a:visited {
+    text-decoration: none;
+    color:blue
+}
+
+main {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.footer-text {
+    background-color: #C2AFF0;
+}
+
+#hero {
+    width: 500px;
+    height: 200px;
+    float: left;
+}
+
+.container {
+    display: inline;
+}
