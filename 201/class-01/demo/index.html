@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 01 Demo</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        background-color: teal;
+        color: white;
+        padding: 32px;
+      }
+      #page-title {
+        font-family: monospace;
+      }
+      main {
+        padding: 0 1rem;
+      }
+      p {
+        font-family: sans-serif;
+      }
+      .vip {
+        font-style: italic;
+        color: red;
+        font-size: 1.5rem;
+      }
+      footer {
+        background-color: seagreen;
+        color: white;
+        padding: 16px;
+      }
+      footer p {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="page-title">Class 01 Demo</h1>
+    </header>
+
+    <main>
+      <h2>Semantic HTML</h2>
+      <p class="vip">Let's talk about semantic HTML!</p>
+      <p>
+        This is a paragraph tag! Paragraps hold pieces of text... very useful.
+      </p>
+      <p>Throughout the 201 we will cover a little more HMTL & CSS</p>
+      <h2>201 Overview</h2>
+      <p>
+        Mostly we will be looking at JavaScript, with a little JavaScript, and
+        maybe even some more JavaScript.
+      </p>
+      <p>After that we will look at JavaScript.</p>
+      <h3>Project Week</h3>
+      <p class="vip">
+        After 3 weeks of learning JavaScript we will have a project week, where
+        you will create an awesome project in groups! It is gonna be good!
+      </p>
+    </main>
+
+    <footer>
+      <p>&copy; Tech Educators</p>
+    </footer>
+
+    <script>
+      let username = prompt("What is your name?");
+      console.log("The users name is " + username);
+
+      let eyes = prompt("What colour are your eyes?");
+      console.log(eyes);
+
+      alert(
+        "Hello there " + username + ". You have beautiful " + eyes + " eyes."
+      );
+    </script>
+  </body>
+</html>
