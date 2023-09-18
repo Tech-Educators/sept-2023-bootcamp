@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to Code 201! In this class, we're going to be reviewing the basics of HTML, CSS, and JavaScript, along with getting our systems setup to do professional web development.
+Welcome to Code 201! In this class, we're going to be reviewing the basics of HTML, CSS, and JavaScript.
 
 ## Class Outline
 
