@@ -1,0 +1,18 @@
+p {
+    color: red;
+}
+
+.hero-text {
+    font-family: fantasy;
+    color: hotpink;
+    background-color: aquamarine;
+}
+
+body {
+    background-color: greenyellow;
+    scroll-behavior: smooth;
+}
+
+#notice {
+    font-size: 2rem;
+}
