@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+header {
+  background-color: tan;
+  padding: 3rem;
+}
+
+main {
+  padding: 0 5%;
+}
+
+footer {
+  background-color: tan;
+  padding: 1rem;
+}
