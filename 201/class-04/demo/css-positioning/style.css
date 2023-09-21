@@ -1,0 +1,48 @@
+/* 1rem = 16px */
+body {
+  margin: 0;
+}
+h1 {
+  color: fuchsia;
+}
+
+section {
+  border: 15px solid red;
+  width: 80%;
+  margin: 5rem auto 10rem auto;
+  height: 40rem;
+}
+
+article {
+  border: 3px solid black;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#one {
+  position: relative;
+  width: 20%;
+  background-color: linen;
+}
+
+#two {
+  position: absolute;
+  width: 50%;
+  background-color: lavenderblush;
+  top: 1rem;
+  right: 1rem;
+}
+
+#three {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: lightcyan;
+}
+
+#four {
+  position: absolute;
+  bottom: 0;
+  background-color: beige;
+  margin: 0;
+}

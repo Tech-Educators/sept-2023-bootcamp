@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning is real fun</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Positioning</h1>
+    <p>
+      We can move elements by declaring their top, right, bottom or left
+      position. But CSS positioning properties such as static, relative,
+      absolute and fixed, will determine how those rules are interpreted.
+    </p>
+    <section>
+      <p>
+        This Section tag with a red border uses the default value "position:
+        static." See what happens to the "absolute" elements if you change this
+        Section tag to "position: relative."
+      </p>
+
+      <article id="one">
+        <h2>Position: relative</h2>
+        <p>
+          It will display exactly the same as before until you also assign its
+          postion using: left, right, top or bottom. This will position it that
+          distance relative to its original position.
+        </p>
+      </article>
+
+      <article id="two">
+        <h2>Position: absolute</h2>
+        <p>
+          This element displays relative to its most recent parent element with
+          positioning set. If it has no positioned parent, it will display
+          relative to the page window.
+        </p>
+      </article>
+
+      <article id="four">
+        <h2>Help!</h2>
+        <p>I am also positioned: absolute. The fixed element is blocking me.</p>
+      </article>
+
+      <article id="three">
+        <h2>Position: fixed</h2>
+        <p>
+          This will position the element relative to the viewport. It will stay
+          in the same place even if the page scrolls, be careful! It can block
+          content on your page unless you account for it by adding padding or
+          margin to other elements. See the div asking for help? Adjust the size
+          of the browser and you will see some cases where that div is
+          completely hidden by this fixed element.
+        </p>
+      </article>
+    </section>
+  </body>
+</html>
