@@ -2,7 +2,7 @@
 
 When you want to work on somebody else's repository:
 
-- Go to the repository on GitHub
+- Go to the repository on GitHub the other persons repository
 - Click `Fork`
 - On the next page, change no settings and just click `Create Repository`
 - Click the `Code` button and copy the link
