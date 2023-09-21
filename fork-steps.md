@@ -4,7 +4,7 @@ When you want to work on somebody else's repository:
 
 - Go to the other persons repository on GitHub 
 - Click `Fork`
-- On the next page, change no settings and just click `Create Repository`
+- On the next page, change no settings and just click `Create Fork`
 - Click the `Code` button and copy the link
 - In your terminal type `git clone` followed by the link you copied
 - cd into that folder and open in in VSCode with `code .`
