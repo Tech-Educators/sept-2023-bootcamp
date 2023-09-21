@@ -24,3 +24,12 @@ while (attempts > 1) {
 if (parseInt(number) !== answer) {
   alert("The answer was 7");
 }
+
+// start of questions 7
+let plants = ["daisy", "monsterra", "rich", "lilly"];
+
+let plantsGuess = prompt("What is one of my favourite plants?");
+
+if (plants.indexOf(plantsGuess) !== -1) {
+  alert("Thats correct! I really like " + plantsGuess);
+}
