@@ -30,9 +30,9 @@ const article = document.createElement("article");
 
 // inside that article, i need to put a h2 for the name, paragraph with their age, ul and some li's with their interests, image
 // name
-const h2 = document.createElement("h2");
-h2.textContent = trevor.name;
-article.appendChild(h2);
+const h2 = document.createElement("h2"); // <h2></h2>
+h2.textContent = trevor.name; // <h2>Trevor</h2>
+article.appendChild(h2); // <article><h2>Trevor</h2></article>
 
 // age
 const p = document.createElement("p");
