@@ -24,7 +24,7 @@ The Aunby Kitten Rescue has tons of kittens who need good homes. One of the best
 
 ## user scenario
 
-Jose is a volunteer for Seattle Kitten Rescue. He has some level of comfort with a browser and copying/pasting/saving/uploading/etc. He navigates to the enter a kitten form and enters the above info in a form box. When he clicks the "submit" button, the kitten's profile is displayed on the page.
+Jose is a volunteer for Aunby Kitten Rescue. He has some level of comfort with a browser and copying/pasting/saving/uploading/etc. He navigates to the enter a kitten form and enters the above info in a form box. When he clicks the "submit" button, the kitten's profile is displayed on the page.
 
 ### out of scope
 
@@ -33,7 +33,7 @@ videos, health history, foster notes, social media, blink tag
 
 ## user stories
 
-1. As a volunteer for Seattle Kitten Rescue, I want to have kitten bios show up on the page without having to write html myself, so that my workload is lessened. I will know this is done when I can hard-code a kitten bio in JavaScript and that kitten's bio is rendered on the page.
+1. As a volunteer for Aunby Kitten Rescue, I want to have kitten bios show up on the page without having to write html myself, so that my workload is lessened. I will know this is done when I can hard-code a kitten bio in JavaScript and that kitten's bio is rendered on the page.
 
 1. As a volunteer, I want to enter the kitten's data into a form, and have that kitten's specific profile automatically show up on the page, so that my workload is lessened. I will know this is done when I can enter kitten data into a form, and that kitten's bio shows up on the page
 
