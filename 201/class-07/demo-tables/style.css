@@ -1,0 +1,21 @@
+table {
+  font-family: monospace;
+}
+
+tr:nth-child(odd) {
+  background-color: antiquewhite;
+}
+
+tr:nth-child(even) {
+  background-color: lightblue;
+}
+
+th {
+  background-color: navy;
+  color: white;
+  padding: 16px;
+}
+
+td {
+  padding: 8px;
+}
