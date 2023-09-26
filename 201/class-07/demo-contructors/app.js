@@ -68,3 +68,4 @@ const phylis = new Kitten("Phylis", 8, ["Boxing", "Taekondo", "Karate", "krav ma
 
 trevor.render()
 phylis.render()
+

@@ -31,9 +31,17 @@ const seattle = {
   totalCookieSold: 0,
   calculateSales: function () {
     for (let i = 0; i < hours.length; i++) {
-      const randNum = randomNumber(this.minCust, this.maxCust);
-      this.customersPerHour.push(randNum);
-      this.cookiesPerHour.push(Math.floor(randNum * this.avgCookiesPerCust));
+      // get the number of customers for this hour
+      const hourCustomers = randomNumber(this.minCust, this.maxCust);
+      this.customersPerHour.push(hourCustomers);
+
+      // get the number of cookies sold this hour
+      const hourCookiesSold = Math.floor(hourCustomers * this.avgCookiesPerCust)
+      this.cookiesPerHour.push(hourCookiesSold);
+
+      // increase the total cookies by adding this hours sales to it
+      this.totalCookieSold = this.totalCookieSold + hourCookiesSold;
+      console.log(this.totalCookieSold)
     }
   },
 };
@@ -48,9 +56,16 @@ const tokyo = {
   totalCookieSold: 0,
   calculateSales: function () {
     for (let i = 0; i < hours.length; i++) {
-      const randNum = randomNumber(this.minCust, this.maxCust);
-      this.customersPerHour.push(randNum);
-      this.cookiesPerHour.push(Math.floor(randNum * this.avgCookiesPerCust));
+      // get the number of customers for this hour
+      const hourCustomers = randomNumber(this.minCust, this.maxCust);
+      this.customersPerHour.push(hourCustomers);
+
+      // get the number of cookies sold this hour
+      const hourCookiesSold = Math.floor(hourCustomers * this.avgCookiesPerCust)
+      this.cookiesPerHour.push(hourCookiesSold);
+
+      // increase the total cookies by adding this hours sales to it
+      this.totalCookieSold = this.totalCookieSold + hourCookiesSold;
     }
   },
 };
