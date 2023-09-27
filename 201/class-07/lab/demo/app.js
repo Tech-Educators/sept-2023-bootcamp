@@ -69,6 +69,11 @@ CookieStore.prototype.render = function () {
     tr.appendChild(td)
   }
 
+  // add the total to the end of the row
+  const totalTd = document.createElement("td");
+  totalTd.textContent = this.totalCookieSold;
+  tr.appendChild(totalTd)
+
   // add that row to the table
   table.appendChild(tr)
 }
@@ -86,6 +91,27 @@ const lima = new CookieStore("Lima", 2, 16, 4.6)
 // dubai.calculateSales()
 // paris.calculateSales()
 // lima.calculateSales()
+
+// render the header row
+// create the tr
+const headerRow = document.createElement("tr");
+const blankTd = document.createElement("td");
+headerRow.appendChild(blankTd)
+
+// add each time in a th
+for (let i = 0; i < hours.length; i++) {
+  const th = document.createElement("th");
+  th.textContent = hours[i];
+  headerRow.appendChild(th)
+}
+
+// add a total heading
+const totalHeading = document.createElement("th");
+totalHeading.textContent = "Total";
+headerRow.appendChild(totalHeading)
+
+// add the row to the table
+table.appendChild(headerRow)
 
 // render each store on the page
 seattle.render()
