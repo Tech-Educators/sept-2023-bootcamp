@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: #003049;
+  width: 90%;
+  margin: 0 auto;
+  height: 500px;
+  border: 5px solid #003049;
+  /* FLEX STYLES */
+  display: flex;
+  align-items: flex-end;
+}
+
+section div {
+  width: 200px;
+  height: 200px;
+}
+
+div:nth-of-type(3) {
+  align-self: flex-start;
+}
