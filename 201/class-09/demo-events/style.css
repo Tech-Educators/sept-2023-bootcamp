@@ -1,0 +1,19 @@
+button {
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: white;
+  border: 3px solid black;
+}
+
+.tomato {
+  background-color: tomato;
+  color: white;
+  font-family: monospace;
+}
+
+.blueviolet {
+  background-color: blueviolet;
+  color: white;
+  font-family: cursive;
+}

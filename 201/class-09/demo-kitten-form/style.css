@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #297373;
+  color: #e6e6e6;
+}
+
+main {
+  margin: 0 2rem;
+}
+img {
+  max-width: 300px;
+}
