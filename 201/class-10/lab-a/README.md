@@ -17,7 +17,7 @@ You only have 4 hours to complete this assignment.
 
 It is your job to create a page that looks ***exactly*** like the preview below. Within your GitHub class repo, under today's directory, you will find all of the assets required to accomplish this task in addition to a larger version of this preview image.
 
-![Chocolate Pizza Preview](./lab-assets/PREVIEW.jpg)
+![Chocolate Pizza Preview](./assets/PREVIEW.jpg)
 
 Use your notes from class, your readings, classmates, and the internet to assist with the completion of the lab. Research what you need and don't be afraid to try different techniques.
 
