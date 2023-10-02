@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js" defer></script>
+    <title>A/V Demo</title>
+  </head>
+  <body>
+    <h1>Audo Video Elements</h1>
+    <section>
+      <h2>Audio</h2>
+      <audio id="levees" src="./assets/levees.m4a" controls autoplay></audio>
+      <button id="randomiser">Randomise Audio</button>
+
+      <h3>Common attributes of audio</h3>
+      <ul>
+        <li>autoplay: Boolean; use sparingly (if at all)</li>
+        <li>controls: provides playback controls to the user</li>
+        <li>loop: Boolean; will play audio over and over (and over)</li>
+        <li>muted: Boolean; can use this to mute audio on page load</li>
+        <li>src: link to the audio file</li>
+        <li>volume: Range of 0.0 (silent) to 1.0 (loud)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Video</h2>
+      <video
+        src="./assets/demi.mov"
+        width="400"
+        height="220"
+        muted
+        controls
+      ></video>
+      <ul>
+        <li>autoplay: Boolean; use sparingly (if at all)</li>
+        <li>controls: provides playback controls to the user</li>
+        <li>height: MUST be an absolute value (no percentages)</li>
+        <li>muted: Boolean; can use this to mute audio on page load</li>
+        <li>
+          poster: user an alternate image for the thumbnail (default is first
+          fream of video)
+        </li>
+        <li>src: link to the video file</li>
+        <li>volume: Range of 0.0 (silent) to 1.0 (loud)</li>
+        <li>width: May be an absolute value or percentages</li>
+      </ul>
+    </section>
+  </body>
+</html>
