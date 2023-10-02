@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: cornsilk;
+  color: saddlebrown;
+}
+
+main {
+  width: 1024px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 6.5rem 10rem 20rem 40%;
+}
+
+#siteLogo {
+  width: 250px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 5rem;
+  color: rosybrown;
+  line-height: 0.8;
+  margin: 3rem 0 1rem;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+section {
+  background-color: rgba(211, 187, 176, 0.3);
+  max-height: 26rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+section img {
+  width: 460px;
+  max-height: 26rem;
+  border: 5px solid transparent;
+}
+
+section img:hover {
+  border: 5px solid rosybrown;
+}
+
+/* button */
+section + div {
+  background-color: darkgray;
+  color: lightgray;
+  padding: 0.5rem 1rem;
+  width: max-content;
+  height: max-content;
+  margin: 1rem;
+}
+
+section + div.clicks-allowed {
+  background-color: rosybrown;
+  color: white;
+  cursor: pointer;
+}
+
+section + div.clicks-allowed:hover {
+  background-color: rgb(211, 187, 175);
+}
