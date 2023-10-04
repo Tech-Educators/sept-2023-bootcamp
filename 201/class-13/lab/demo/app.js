@@ -21,7 +21,7 @@ function Product(name, views, clicks) {
 
 // if there is nothing in localStorage for the products:
 // instantiate my default products (0 views and clicks)
-if(/* TODO: there is nothing in localStorage */) {
+if (localStorage.getItem("products") === null) {
   new Product("bag", 0, 0);
   new Product("banana", 0, 0);
   new Product("bathroom", 0, 0);
@@ -42,9 +42,14 @@ if(/* TODO: there is nothing in localStorage */) {
   new Product("water-can", 0, 0);
   new Product("wine-glass", 0, 0);
 } else {
-  // TODO: BUT if there IS soemthing in localStorage, get that, and turn into my products
+  const productsLS = JSON.parse(localStorage.getItem("products"));
+  // for each item in the productsLS array, make a new Product
+  for (let i = 0; i < productsLS.length; i++) {
+    // create a new product for each item in the array
+    //(and the Product function automatically adds it to the producst array)
+    new Product(productsLS[i].name, productsLS[i].views, productsLS[i].clicks);
+  }
 }
-
 
 // function that randomly gets a index for an item in item
 function randomProdIdx() {
@@ -86,7 +91,8 @@ function handleImgClick(event) {
   if (userClicks === maxClicks) {
     alert("You have run out of votes");
     renderChart();
-    // TODO: put my products array into localStorage
+    // take our array after we have updated the clicks and views, and add to localStorage
+    localStorage.setItem("products", JSON.stringify(products));
     return; // end the function here and don't run the rest
   }
 
