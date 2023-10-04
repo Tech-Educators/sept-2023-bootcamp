@@ -1,0 +1,7 @@
+{
+  "name": "Tim",
+  "age": 28,
+  "height": "6ft 4in",
+  "hair": false,
+  "children": ["Ezra", "Caleb"]
+}
