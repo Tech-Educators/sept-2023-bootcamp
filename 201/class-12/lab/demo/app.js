@@ -4,7 +4,7 @@ const img3 = document.getElementById("img3");
 
 // make sure the user only has 25 clicks
 let userClicks = 0;
-let maxClicks = 5;
+const maxClicks = 25;
 
 // a constructor that makes product objects
 function Product(name) {
@@ -121,19 +121,21 @@ viewResults.addEventListener("click", showResults);
 
 renderProducts();
 
-// craete a function that make a chart
+// function to create a new chart
 function renderChart() {
-  // get where we are going to put the chart
-  const ctx = document.getElementById("myChart"); // context of the chart
+  const ctx = document.getElementById("myChart");
 
   const labels = [];
   const views = [];
   const clicks = [];
 
-  // populate the arrays with data
-  // TODO: ^
+  // loop through my products array and add in the label, views and clicks data to my arrays
+  for (let i = 0; i < products.length; i++) {
+    labels.push(products[i].name);
+    views.push(products[i].views);
+    clicks.push(products[i].clicks);
+  }
 
-  // run the Chart function (that does the chart making)
   new Chart(ctx, {
     type: "bar",
     data: {
@@ -145,6 +147,7 @@ function renderChart() {
           borderWidth: 1,
         },
         {
+          type: "line",
           label: "# of clicks",
           data: clicks,
           borderWidth: 1,
