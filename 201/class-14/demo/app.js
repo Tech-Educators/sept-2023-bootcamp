@@ -80,6 +80,8 @@ localStorage.setItem('apple', JSON.stringify(apple1))
 
 let applesLS = localStorage.getItem('apple')
 console.log(JSON.parse(applesLS))
+applesLS.eat()
+
 
 let reInstancedApple = new AppleMaker(JSON.parse(applesLS).name)
 console.log(reInstancedApple)
