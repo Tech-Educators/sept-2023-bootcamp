@@ -14,3 +14,20 @@ const handleButtonClick = function() {
 }
 
 catButton.addEventListener('click', handleButtonClick)
+
+
+function Apple(id,color,views, src) {
+    this.name = id
+    this.color = color
+    this.views = views
+    // return this
+}
+
+new Apple ('2342', 'red', '1341')
+
+let myObj = {}
+
+console.log(myObj)
+
+myObj.name = 'sam'
+console.log(myObj);
