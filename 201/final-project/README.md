@@ -390,7 +390,7 @@ Speak clearly and do not use slang or profanity. Take it seriously and be profes
 
 Each team member's grade is based on their individual effort and the project's technical merit.
 
-Individual effort is graded based on links to commits and Pull Requests that demonstrate your contributions, as submitted in Canvas in the daily project week reports.
+Individual effort is graded based on links to commits and Pull Requests that demonstrate your contributions.
 
 Technical merit is graded based on the following criteria:
 
