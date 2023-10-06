@@ -248,9 +248,9 @@ During standup, each team member will stand up and take turns discussing three p
 
 ## Daily Goals
 
-Day 0: This is the Friday before project week. Pitch the idea to your instructor. Once the idea is approved, create your repository, fill your project board with issues, and begin scaffolding your files. Deploy your blank site to Netlify.
+Day 0: This is the Friday before project week. Pitch the idea to your instructor. Once the idea is approved, create your repository, fill your project board with issues, and begin scaffolding your files. Deploy your site on GitHub Pages.
 
-Day 1: Plan your application and begin to build features.
+Day 1: Finish any planning, and start building out features.
 
 Day 2: This should be a big build-out day of features.
 
@@ -340,21 +340,17 @@ _Why:_
 
 ## Deployment
 
-Deploy your front-end on Netlify and be prepared to present from the deployed version of your site. Associate your Netlify instance with your GitHub repository. Enable automatic deploys from your main branch. Ensure your public url is resume-ready: simple, professional, and contains NO REFERENCES to course codes or anything school related.
+Deploy your project on GitHub Pages and be prepared to present from the deployed version of your site.
 
-Deploy your server on Render, configure your deployed front end to connect to your deployed back end. Associate your Render instance with server's GitHub repository. Enable automatic deploys from your main branch.
+To deploy to GitHub pages, go to the "Settings" tab in the repository. Scroll down to the "GitHub Pages" section. In the "Source" dropdown, select your main branch and click "Save". You will then see a deployed URL and can click it to see your deployed site.
 
-_Why:_
+Note that it may take a few minutes for the deployed link to update and display your updated code as it appears on the main branch. If you do not see the deployed site updating after approximately 30 minutes, check the code base to ensure that there are no errors in your functionality when running your code locally.
 
-> Deployed sites provide a unique URL that can be shared with anyone. You will also want to include this URL in your portfolio.
+Deploy your site on the first day of project week.
 
-Deploy your site on the first day.
+After the initial repository creation, scaffold out a basic `index.html` file with a heading element or something similar. Then push this code to GitHub and deploy it as a "proof of life" that the deployment worked correctly. As you continue to work on your project, the deployed site will update any time the team merges a pull request into the main branch. You also have the option to set this to a different branch, although it is most common to deploy from the main branch.
 
-_Why:_
-
-> Ensure that you have a deployed site at the beginning of the project so you have a live site where you can view your changes, in addition to testing your code locally. Deploying on the first day also ensures that you will have a live site in the case that GitHub goes down on presentation day. (It happens!)
-
-After the initial repository creation, scaffold out a basic `server.js` file with a heading element or something similar. Then push this code to GitHub and deploy it as a "proof of life" that the deployment worked correctly. As you continue to work on your project, the deployed site will update any time the team merges a pull request into the main branch. You also have the option to set this to a different branch, although it is most common to deploy from the main branch.
+You are welcome to purchase a domain name, although this is not a requirement.
 
 [Back to top](#top)
 
@@ -382,8 +378,6 @@ Each member of the team should have a speaking part. It is okay to use note card
 
 In general, do not show code during the presentation unless the audience asks to see it. Have a code editor open just in case though.
 
-The appropriate dress code is business casual - not too formal and not too casual.
-
 In addition to the scheduled practice session, the team is encouraged to continue to practice on their own. Keep track of the time and adjust accordingly. Practice with the microphone (or holding something) to feel comfortable with holding it and practice passing the microphone between team members as you switch speaking roles.
 
 Speak clearly and do not use slang or profanity. Take it seriously and be professional.
@@ -396,72 +390,34 @@ Speak clearly and do not use slang or profanity. Take it seriously and be profes
 
 Each team member's grade is based on their individual effort and the project's technical merit.
 
-Individual effort is graded based on links to commits and Pull Requests that demonstrate your contributions, as submitted in Canvas in the daily project reports.
+Individual effort is graded based on links to commits and Pull Requests that demonstrate your contributions, as submitted in Canvas in the daily project week reports.
 
 Technical merit is graded based on the following criteria:
 
-### Front-End
+- Good and proper use of HTML
 
-- Good and proper use of React
-
-  - Installed and configured using create-react-app
   - Clear, readable, and efficient structure
-  - Managing component state using state
-  - Allow for user authentication via Auth0
-  - Correctly passes props, identifying both shared state and behaviors (methods) to child components
-  - Organized into nested components for DRY code
+  - Uses semantic markup whenever possible
 
 - Good and proper use of CSS
 
   - Clear, readable, and efficient styles
-  - Designed with a mobile-first approach
+  - Appropriate page layout for desktop
+  - Well-organized file structure
+  - At least one CSS animation
 
-- Good and proper use of JavaScript and
+- Good and proper use of JavaScript
 
   - Clear, readable, and efficient code
   - Uses domain models to encapsulate data and behavior, such as objects and constructors
-  - Uses React to respond to user events, receive and process user input, and display new content to the user
+  - Responds to user events to receive/process user input and display new content to the user
   - Contains no unnecessary or commented-out code
 
-- [Deployed](#deployment) live on the Internet via Netlify
-
-- Clear documentation in the README.md
-  - See the [documentation guidelines](#documentation) provided above
-
-### Back-End
-
-- Try to utilize a third-party API
-
-- Server side code must:
-
-  - Use Node and Express, and other NPM packages as appropriate
-  - Utilize a Mongo database as described in detail below
-  - Routes should follow standard REST conventions
-  - Implement authentication via Auth0
-
-- Data is persisted in a Mongo database
-
-  - Mongo database provisioned in the cloud
-  - Logical schemas with appropriate data types
-  - Data model that maps to the problem domain
-  - Ability to read records from the database
-  - Ability to create new resources and persist them in the database
-  - Ability to update records in the database
-  - Ability to delete records in the database
-
-- Clear documentation in the README.md
-
-  - See the [documentation guidelines](#documentation) provided above
-
 - Generally useful and functional
-  - The project must utilize a professional Netlify domain name
   - Works as expected with no bugs
   - Has at least three distinct pages with clear navigation, one of which must be an "About Us" page
   - Has at least two pages that accept and process user input
-  - [Deployed](#deployment) live on the Internet via Render
-
-[Back to top](#top)
-
-### Reference
+  - State is persisted between page reloads
+  - Deployed live on the Internet via GitHub Pages
 
 This document was inspired by and adapted from [this set of project guidelines](https://github.com/elsewhencode/project-guidelines).
