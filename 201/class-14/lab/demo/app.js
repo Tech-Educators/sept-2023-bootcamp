@@ -4,9 +4,12 @@ const img3 = document.getElementById("img3");
 
 // make sure the user only has 25 clicks
 let userClicks = 0;
-const maxClicks = 5;
+const maxClicks = 25;
 
 const products = [];
+
+// here we will store a reference to the products we just saw
+let previous = [];
 
 // a constructor that makes product objects
 function Product(name, views, clicks) {
@@ -64,10 +67,22 @@ function renderProducts() {
   let prod3 = randomProdIdx();
 
   // make sure they aren't the same
-  while (prod1 === prod2 || prod1 === prod3 || prod2 === prod3) {
+  while (
+    prod1 === prod2 ||
+    prod1 === prod3 ||
+    prod2 === prod3 ||
+    previous.includes(prod1) ||
+    previous.includes(prod2) ||
+    previous.includes(prod3)
+  ) {
+    prod1 = randomProdIdx();
     prod2 = randomProdIdx();
     prod3 = randomProdIdx();
   }
+
+  // empty the products array & add our new product indexs to previous array
+  // for the next time we get new products
+  previous = [prod1, prod2, prod3];
 
   // change the src and alt attributes of our img tags
   img1.src = products[prod1].src;
