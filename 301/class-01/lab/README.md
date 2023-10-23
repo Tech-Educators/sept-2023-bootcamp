@@ -22,7 +22,7 @@ _Your repository must include the following config files:_
 
   1. Create a React application using Vite as demonstrated in class.
      - Use the command `npm create vite@latest`.
-  1. Create a new repository on GitHub named "Gallery of Horns" WITHOUT a README.md. We will import an "existing" repository with its own README.
+  1. Create a new repository on GitHub named "horned-beasts" WITHOUT a README.md. We will import an "existing" repository with its own README.
   1. Follow the instructions given by GitHub to "push an existing repository from the command line".
      - be sure to select HTTPS or SSH, whichever is relevant for you.
   1. Create a Branch and begin your work. As always, ACP often.
