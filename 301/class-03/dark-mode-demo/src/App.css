@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+.light {
+  background-color: rgb(243, 163, 149);
+  color: black;
+}
+
+.dark {
+  background-color: rgb(48, 87, 89);
+  color: white;
+}
