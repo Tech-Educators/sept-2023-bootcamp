@@ -8,7 +8,6 @@ In this class we will cover how React handles `forms` and the asynchronous natur
 
 - Warm-up exercise
 - Review code challenges
-- Introduction of the code challenge topic, `.sort()`
 - Code Demo
 - Lab Preview
 
