@@ -9,16 +9,26 @@ import SelectedBeast from "./components/SelectedBeast";
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [shownBeast, setShownBeast] = useState({});
+  const [horns, setHorns] = useState("");
 
   function handleShowModal(beast) {
     setShowModal(!showModal);
     setShownBeast(beast);
   }
 
+  function handleFilter(event) {
+    setHorns(event.target.value);
+  }
+
   return (
     <div>
       <Header />
-      <Gallery data={data} handleShowModal={handleShowModal} />
+      <select onChange={handleFilter}>
+        <option value="">All</option>
+        <option value="2">2</option>
+        <option value="100">100</option>
+      </select>
+      <Gallery data={data} handleShowModal={handleShowModal} horns={horns} />
       <Footer />
       {showModal && (
         <SelectedBeast
