@@ -7,8 +7,6 @@ For this class we will explore third party APIs and how to request data from the
 ## Class Outline
 
 - Warm-up exercise
-- Review code challenges
-- Introduction of the code challenge topic
 - Code review of previous lab assignment
 - Third Party APIs, `async` and `await`
 - Code Demo
