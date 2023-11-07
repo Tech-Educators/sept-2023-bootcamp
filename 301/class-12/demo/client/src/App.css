@@ -1,0 +1,8 @@
+.movies {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 400px;
+}
