@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import Form from "./components/Form";
+import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import Movie from "./pages/Movie";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -22,26 +25,38 @@ function App() {
       const API = `http://localhost:8080/movies/${id}`;
       await axios.delete(API);
       getMovies();
+      alert("Bye bye bye!");
     } else {
       alert("Phew, that was a close one!");
     }
   }
 
   return (
-    <>
-      <h1>Samovies</h1>
-      <p>The ultimate movie Database</p>
-      {movies.map((movie) => {
-        return (
-          <div key={movie._id}>
-            <h2>{movie.name}</h2>
-            <img src={movie.imgUrl} />
-            <button onClick={() => deleteMovie(movie._id)}>Delete Movie</button>
-          </div>
-        );
-      })}
-      <Form movies={movies} setMovies={setMovies} />
-    </>
+    <BrowserRouter>
+      <header>
+        <h1>Samovies</h1>
+        <p>The ultimate movie Database</p>
+      </header>
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              movies={movies}
+              setMovies={setMovies}
+              deleteMovie={deleteMovie}
+            />
+          }
+        />
+        <Route path="/about" element={<About />} />
+        <Route path="/movie/:id" element={<Movie />} />
+      </Routes>
+
+      <footer>
+        <p>Samovies is a trading name of Samoives &copy;</p>
+      </footer>
+    </BrowserRouter>
   );
 }
 

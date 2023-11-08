@@ -31,6 +31,14 @@ app.delete("/movies/:id", async (request, response) => {
   response.json(deletedMovie);
 });
 
+app.put("/movies/:id", async (request, response) => {
+  const updatedMovie = await Movie.findByIdAndUpdate(
+    request.params.id,
+    request.body
+  );
+  response.json(updatedMovie);
+});
+
 app.listen(PORT, () => console.log(`App is running on port ${PORT}`));
 
 // http://localhost:8080/movies
