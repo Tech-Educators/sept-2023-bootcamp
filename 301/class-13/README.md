@@ -1,9 +1,5 @@
 # Updating Resources
 
-## DEI Reminder
-
-In our next class we will discuss Diversity, Equity and Inclusion. Be sure to complete [the reading assignment](https://codefellows.github.io/code-301-guide/curriculum/class-14/DISCUSSION) before class begins in order to achieve full credit for the activity.
-
 ## Overview
 
 In this class we do the final step in full CRUD functionality for our database. This step is to implement the ability to update records that exist in our database.
