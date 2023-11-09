@@ -12,8 +12,13 @@ mongoose.connect(process.env.DATABASE_URL);
 app.get("/", (_, response) => response.json("Root route. Gouda job."));
 
 app.get("/books", async (request, response) => {
-  const books = await Book.find(request.query);
-  response.json(books);
+  try {
+    const books = await Book.find(request.query);
+    response.json(books);
+  } catch (error) {
+    console.log(error);
+    response.status(418).json("418 I'm a Teapot");
+  }
 });
 
 app.post("/books", async (request, response) => {

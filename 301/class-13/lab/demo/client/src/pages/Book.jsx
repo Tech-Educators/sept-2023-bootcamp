@@ -5,6 +5,7 @@ import Form from "../components/Form";
 
 export default function Book() {
   const [book, setBook] = useState({});
+  const [isError, setIsError] = useState(false);
 
   const params = useParams();
 
@@ -14,8 +15,17 @@ export default function Book() {
 
   async function getBook() {
     const API = `http://localhost:8080/books?_id=${params.id}`;
-    const res = await axios.get(API);
-    setBook(res.data[0]);
+    try {
+      const res = await axios.get(API);
+      setBook(res.data[0]);
+    } catch (err) {
+      console.log(err);
+      setIsError(true);
+    }
+  }
+
+  if (isError) {
+    return <p>Woops</p>;
   }
 
   return (
